@@ -1,15 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
-</head>
-<body>
-    <h1 class="text-center mt-5">Hola, Bootstrap!</h1>
-    <button class="btn btn-primary">Un botón Bootstrap</button>
 
-    <script src="js/bootstrap.bundle.min.js"></script>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gerald CV</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body {
+      background-color: #d9dadc;
+    }
+    .profile-pic {
+      max-width: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+  </style>
+</head>
+
+<body>
+  <main class="container my-5">
+    <header class="text-center mb-4">
+      <img src="img/profilepic.jpeg" alt="Gerald's Photo" class="profile-pic mb-3" />
+      <h1>Gerald Gonzalez Granados</h1>
+      <p class="lead">Software Engineer | Web Developer</p>
+    </header>
+
+    <section aria-label="Contact Information" class="mb-4">
+      <h2>Contact</h2>
+      <ul class="list-unstyled">
+        <li><strong>Email:</strong> gonzalezg375@gmail.com</li>
+        <li><strong>Phone:</strong> +506 6197 7545</li>
+        <li><strong>Location:</strong> Costa Rica</li>
+        <li><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/gerald-granados" target="_blank" rel="noopener noreferrer">linkedin.com/in/gerald</a></li>
+      </ul>
+    </section>
+
+    <section aria-label="Professional Summary" class="mb-4">
+      <h2>Summary</h2>
+      <p>
+        Experienced software engineer with a passion for developing innovative programs that expedite the efficiency and effectiveness of organizational success. Skilled in Java, JavaScript, and modern web technologies.
+      </p>
+    </section>
+
+    <section aria-label="Education" class="mb-4">
+      <h2>Education</h2>
+      <article>
+        <h3>Software Engineering - UTN</h3>
+        <time datetime="2024-01">2024 - Present</time>
+        <p>Currently completing bachelor's degree, expected to graduate in 2-3 years.</p>
+      </article>
+      <article>
+        <h3>English Course</h3>
+        <p>Currently improving my English level to have better communication skills.</p>
+      </article>
+    </section>
+
+    <section aria-label="Skills" class="mb-4">
+      <h2>Skills</h2>
+      <ul>
+        <li>Java, C#, JavaScript, CSS, HTML</li>
+        <li>Bootstrap, React, Next.js</li>
+        <li>MYSQL, PostgreSQL, SQLite</li>
+        <li>Git, GitHub, Gitlab</li>
+      </ul>
+    </section>
+  </main>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
