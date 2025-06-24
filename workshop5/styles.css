@@ -1,0 +1,103 @@
+:root {
+  --main-color: #1EAEDB;
+  --gradient-start: #00c6ff;
+  --gradient-end: #0072ff;
+  --text-color: #333;
+}
+
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: var(--text-color);
+}
+
+/* ID selector */
+#main-header {
+  font-size: 48px;
+  margin-top: 20px;
+}
+
+/* Combined selector */
+.hero.hero-highlight {
+  background-color: #f9f9f9;
+}
+
+.hero .hero-text {
+  text-align: left;
+  padding-top: 40px;
+}
+
+/* Child selector */
+.hero > .hero-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.stats {
+  padding: 80px 0;
+  background: linear-gradient(to right, var(--gradient-start), var(--gradient-end));
+  color: white;
+}
+
+.stat h4 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+/* Attribute selector */
+a[target="_blank"] {
+  color: red;
+  text-decoration: underline;
+}
+
+.docs {
+  padding: 80px 0;
+  background-color: #fff;
+}
+
+.responsive-section {
+  padding: 80px 0;
+  background: linear-gradient(to right, var(--gradient-start), var(--gradient-end));
+  color: white;
+}
+
+/* Group selector */
+.image-box, .stat {
+  margin-top: 30px;
+  padding: 4px;
+}
+
+.image-box img {
+  width: 100%;
+  height: auto;
+}
+
+/* Pseudo-clases */
+.button:hover {
+  background-color: darkcyan;
+}
+
+/* Pseudo-elementos */
+.button::after {
+  content: ' →';
+  font-weight: bold;
+  padding-left: 5px;
+}
+
+.button,
+.button-primary {
+  display: inline-block;
+  text-align: center;
+  padding: 12px 24px;
+  font-size: 12px;
+  line-height: 1.5;
+  vertical-align: middle;
+  border: none;
+  background-color: var(--main-color);
+  color: white;
+  text-decoration: none;
+  border-radius: 13px;
+  cursor: pointer;
+}
